@@ -406,6 +406,15 @@ footer .footer-source-link:focus {
 .home-content.blog-post p:first-of-type {
   text-indent: 2em;
 }
+/* 首页「梦想合作社」链接：无下划线、不改色 */
+.home-content.blog-post .home-dreamcolab-link {
+  text-decoration: none;
+  color: inherit;
+}
+.home-content.blog-post .home-dreamcolab-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
 /* 首页「填表联系」链接：加粗+下划线 */
 .home-content.blog-post .home-contact-link {
   text-decoration: underline;
@@ -709,6 +718,7 @@ footer .footer-source-link:focus {
   font-weight: 600;
 }
 .intro-header.big-img .page-heading hr {
+  border-color: rgba(255, 255, 255, 0.65);
   box-shadow: 1px 1px 3px #000;
   -webkit-box-shadow: 1px 1px 3px #000;
   -moz-box-shadow: 1px 1px 3px #000;
