@@ -5,6 +5,8 @@ body.first-bg-ready .navbar-custom { border-bottom: 1px solid #EAEAEA; }
     document.getElementById('contact-thanks').style.display = 'block';
     var f = document.getElementById('contact-form');
     if (f) f.style.display = 'none';
+    var intro = document.querySelector('.contact-intro');
+    if (intro) intro.style.display = 'none';
 }
 document.getElementById('contact-form').addEventListener('submit', function() {
     var btn = document.getElementById('contact-submit-btn');
