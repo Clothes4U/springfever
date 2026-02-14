@@ -100,8 +100,7 @@ var main = {
 
       var imgInfo = main.getImgInfo(1);
       main.setImg(imgInfo.src);
-      /* 与切换时一致：150ms 后再点亮圆点，第一个圆点与其他圆点发亮时机相同 */
-      setTimeout(function() { main.updateDots(); }, 150);
+      main.updateDots();
       $(".intro-header-first-bg").addClass("loaded");
       document.body.classList.add("first-bg-ready");
 
@@ -131,10 +130,13 @@ var main = {
             img.css("opacity", "1");
           });
         });
-        setTimeout(function() {
-          main.currentImgIndex = idx;
-          main.updateDots();
-        }, 150);
+        /* 首图→第二张：圆点只在 cleanup 时更新（1050ms）。第二张→第三张等：提前在 150ms 点亮，否则会太晚 */
+        if (idx !== 2) {
+          setTimeout(function() {
+            main.currentImgIndex = idx;
+            main.updateDots();
+          }, 150);
+        }
       };
 
       var getNextImg = function() {
