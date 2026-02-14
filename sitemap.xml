@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://springfever.net/contact/index.html</loc>
+    <loc>https://springfever.net/contact/index.html</loc>
     
     <lastmod>2026-02-14</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://springfever.net/index.html</loc>
+    <loc>https://springfever.net/index.html</loc>
     
     <lastmod>2026-02-14</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>http://springfever.net/02/14/2026/hello-world/</loc>
+    <loc>https://springfever.net/02/14/2026/hello-world/</loc>
     
     <lastmod>2026-02-14</lastmod>
     
@@ -30,7 +30,7 @@
   
 
   <url>
-    <loc>http://springfever.net/</loc>
+    <loc>https://springfever.net/</loc>
     <lastmod>2026-02-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
