@@ -100,7 +100,8 @@ var main = {
 
       var imgInfo = main.getImgInfo(1);
       main.setImg(imgInfo.src);
-      main.updateDots();
+      /* 与切换时一致：150ms 后再点亮圆点，第一个圆点与其他圆点发亮时机相同 */
+      setTimeout(function() { main.updateDots(); }, 150);
       $(".intro-header-first-bg").addClass("loaded");
       document.body.classList.add("first-bg-ready");
 

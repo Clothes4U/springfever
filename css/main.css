@@ -733,9 +733,12 @@ footer .footer-source-link:focus {
   background: rgba(255, 255, 255, 0.95);
 }
 
-.intro-header.big-img .header-dot:hover {
-  background: rgba(255, 255, 255, 0.7);
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.4);
+/* 仅在有悬停能力的设备上显示 hover，避免手机端点击后“选中”效果不消失 */
+@media (hover: hover) {
+  .intro-header.big-img .header-dot:hover {
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.4);
+  }
 }
 @media only screen and (min-width: 768px) {
   .intro-header {
