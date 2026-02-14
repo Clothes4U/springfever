@@ -783,13 +783,9 @@ footer .footer-source-link:focus {
     width: 100%;
     /* 保持 4096:1840 比例，不再写死高度 */
   }
-  .intro-header.big-img .page-heading,
-  .intro-header.big-img .post-heading {
-    display: none;
-  }
   .header-section.has-img .big-img {
     margin-bottom: 0;
-  }  
+  }
 }
 
 .caption {
